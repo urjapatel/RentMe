@@ -1,0 +1,76 @@
+.contact-us-page {
+  padding: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.demo-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-image {
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.content {
+  flex-basis: 50%;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  margin: 0 30px;
+  flex-basis: 40%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .content,
+  .form-container {
+    flex-basis: auto;
+  }
+
+  .form-container {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+}

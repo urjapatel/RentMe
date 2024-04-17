@@ -1,0 +1,146 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 2.5em;
+	padding: 20px;
+	margin: 0;
+	text-align: left;
+	position: relative;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 2em;
+	color: #333;
+	cursor: pointer;
+	user-select: none;
+	display: none;
+}
+
+.left-arrow {
+	left: 0;
+}
+
+.right-arrow {
+	right: 0;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: center;
+	display: none;
+}
+
+.agent-image {
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+.agent-name {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.agent-detail {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #666;
+}
+
+.agent-description {
+	margin-bottom: 20px;
+}
+
+.contact-agent-button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.2em;
+	margin: 4px 2px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.page-nav {
+	display: none;
+	text-align: center;
+}
+
+.page-info {
+    margin-top: 35px;
+}
+
+.prev-button,
+.next-button {
+	background-color: transparent;
+	border: none;
+	font-size: 2em;
+	color: #333;
+	cursor: pointer;
+	user-select: none;
+	margin: 0 10px;
+}
+.top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+	.card-container {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+	}
+
+	.card {
+		flex-shrink: 0;
+	}
+
+	h1 {
+		padding: 20px 10px;
+	}
+
+	.arrow {
+		display: block;
+	}
+
+	.page-nav {
+		display: flex;
+        flex-direction: row;
+	}
+}
